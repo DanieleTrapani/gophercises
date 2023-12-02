@@ -25,7 +25,6 @@ func main() {
 	}
 
 	for _, line := range lines {
-		// split the line in question and answer
 		question, answer := strings.Split(line, ",")[0], strings.Split(line, ",")[1]
 		var input string
 		fmt.Printf("What is %s?\n", question)
@@ -39,6 +38,7 @@ func main() {
 			fmt.Println("Yes!")
 		} else {
 			fmt.Println("No!")
+			break
 		}
 
 	}
